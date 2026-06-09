@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NoteX 筆記市集原型</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="market">
+      <section class="catalog">
+        <header class="masthead">
+          <div>
+            <p>U-start 114 / NoteX 筆記市集</p>
+            <h1>課堂筆記交易與學習資源市集</h1>
+          </div>
+          <div class="wallet">
+            <span>本週交易</span>
+            <strong id="weeklyTotal">NT$0</strong>
+          </div>
+        </header>
+
+        <div class="filters">
+          <input id="search" type="search" placeholder="搜尋課名、學校、筆記主題">
+          <select id="typeFilter">
+            <option value="all">全部類型</option>
+            <option value="exam">考前整理</option>
+            <option value="lecture">課堂逐字</option>
+            <option value="template">報告模板</option>
+          </select>
+          <select id="sortBy">
+            <option value="match">推薦排序</option>
+            <option value="price">價格低到高</option>
+            <option value="rating">評價高到低</option>
+          </select>
+        </div>
+
+        <div id="noteGrid" class="note-grid" aria-live="polite"></div>
+      </section>
+
+      <aside class="desk">
+        <section class="panel">
+          <div class="panel-head">
+            <p>上架中心</p>
+            <h2>建立筆記商品</h2>
+          </div>
+          <form id="listingForm" class="listing-form">
+            <label>
+              課程名稱
+              <input name="course" required placeholder="例：資料結構">
+            </label>
+            <label>
+              筆記主題
+              <input name="title" required placeholder="例：期中考重點整理">
+            </label>
+            <label>
+              類型
+              <select name="type">
+                <option value="exam">考前整理</option>
+                <option value="lecture">課堂逐字</option>
+                <option value="template">報告模板</option>
+              </select>
+            </label>
+            <label>
+              價格
+              <input name="price" type="number" min="30" value="120" required>
+            </label>
+            <button type="submit">上架筆記</button>
+          </form>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <p>購買清單</p>
+            <h2>收藏與結帳</h2>
+          </div>
+          <div id="cart" class="cart-empty">尚未收藏筆記。</div>
+          <button id="checkout" class="secondary" type="button">產生交易草稿</button>
+        </section>
+
+        <section class="panel compact">
+          <span>平台規則</span>
+          <strong>匿名範例、授權聲明、評價機制</strong>
+          <p>原型把筆記市集拆成上架審核、搜尋推薦、收藏結帳與評價紀錄四個核心流程。</p>
+        </section>
+      </aside>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
