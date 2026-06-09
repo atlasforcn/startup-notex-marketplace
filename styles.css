@@ -1,12 +1,12 @@
 :root {
-  --paper: #fbf8ef;
+  --paper: #f2f7f2;
   --ink: #202425;
   --muted: #6d7470;
-  --line: #ddd3c2;
+  --line: #ccd9d0;
   --green: #1f765f;
   --blue: #305f83;
   --yellow: #f1c86b;
-  --panel: #fffef9;
+  --panel: #ffffff;
 }
 
 * {
@@ -44,7 +44,7 @@ select {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 16px 50px rgba(42, 35, 24, 0.1);
+  box-shadow: 0 16px 50px rgba(35, 51, 42, 0.1);
 }
 
 .masthead {
@@ -117,7 +117,7 @@ h2 {
   height: 44px;
   width: 100%;
   padding: 0 12px;
-  background: #fffef9;
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 8px;
   outline: none;
@@ -255,7 +255,7 @@ h2 {
 
 .compact {
   background: #202425;
-  color: #fffef9;
+  color: #ffffff;
 }
 
 .compact span,
