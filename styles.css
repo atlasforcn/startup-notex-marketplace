@@ -259,8 +259,13 @@ h2 {
 }
 
 .compact span,
-.compact p {
+.compact p,
+.compact a {
   color: #c8d1cf;
+}
+
+.compact a {
+  font-weight: 850;
 }
 
 @media (max-width: 980px) {
