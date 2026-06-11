@@ -1,5 +1,21 @@
 # NoteX 筆記市集原型
 
+## 快速看懂
+
+![startup-notex-marketplace 功能截圖](docs/preview.png)
+
+- 線上 Demo：https://atlasforcn.github.io/startup-notex-marketplace/
+- 這個原型在做什麼：把 NoteX 做成筆記交易與學習資源市集。
+- 特色定位：特色是把學生筆記、評價、交易與學習需求放在同一個輕量市集流程。
+- 操作流程：瀏覽課程筆記與分類 → 查看價格、評價與內容摘要 → 加入收藏/購買流程並追蹤學習資源
+
+<details>
+<summary>展開完整功能流程截圖</summary>
+
+![startup-notex-marketplace 完整功能流程截圖](docs/flow.png)
+
+</details>
+
 ## 比賽來源
 
 - 競賽：U-start 創新創業計畫
